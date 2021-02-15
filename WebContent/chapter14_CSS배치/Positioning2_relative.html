@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- 
+	상대배치
+		. 상대위치로 지정한 박스의 배치컨테이너는 기본(static)배치일때와 동일하게 부모박스 공간이 되고
+		. 뒤따라 오는 형제 박스들의 배치에는 영향을 주지 않는다.
+		. top과 left는 부모박스의 기본 배치공간을 기준으로 상대위치를 나타낸것이므로
+			부모박스의 배치가 변경되더라도 속성값은 변하지 않는다.
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	div{
+		width : 150px; height :50px; text-align:center;
+		
+	}
+	#b1{background: gray;}
+	#b2{background: green; margin:0px;}
+	#b3{background: red;margin: 0px 10px; position: relative;/* 상대배치지정 */ top:30px; left:30px;/* 위치지정 */}
+	#b4{background: orange; margin: 0px 20px;}
+	#b5{background: darkgray;}
+	#container{
+		width: 300px;
+		height: 200px;			
+		position: relative;			/* 부모컨테이너의 상대배치 */
+		top:30px; left:30px;		
+		margin: 0px 50px;
+		border: 2px black dashed;
+	}
+</style>
+</head>
+<body>
+	<div id="b1">박스1</div>
+	<div id="container">
+		<div id="b2">박스2</div>
+		<div id="b3">박스3</div>
+		<div id="b4">박스4</div>
+	</div>
+	<div id="b5">박스5</div>
+</body>
+</html>

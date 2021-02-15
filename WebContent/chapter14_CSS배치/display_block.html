@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- 
+	display속성
+		. block - 박스의 유형을 블럭박스로 보여준다.
+				- 항상 새라인에서 시작한다.
+				- 옆에 다른 요소의 배치가 불가하다.
+				- width와 height으로 크기를 조절한다.
+				- padding border margin 조절가능
+		. inline - 박스 유형을 인라인으로 보여준다.
+				 - 새라인에서 시작이 불가하다.
+				 - 모든 박스 내 배치가능
+				 - 옆에 다른 요소 배치가능
+				 - width와 height을 크기조절이 불가하다.
+				 - margin-top,margin-bottom으로 조절이 불가하다.
+		. inline-block	- 박스의 유형을 인라인 블럭 형식으로 보여준다.
+						- 새라인에서 시작하지 못함
+						- 라인 안(inline)에 배치된다.
+						- 모든 박스 내 배치가 가능하다.
+						- 옆에 다른 요소도 배치가 가능하다.
+						- width와 height크기 조절이 가능하다.
+						- padding border margin 조절이 가능하다.
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	span{
+		display: block; /* 블럭처리 */
+		width: 100px;
+		height: 60px;
+		background-color: lightgray;
+	}
+</style>
+</head>
+<body>
+	<div>
+		<span>block span</span>과 <span>block span</span>입니다.
+		
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- 테이블의 기본형식
+			;caption thead, tbody, ftoot태그를 사용하지않고 tr로만 작성하는 경우는 바람직 하지 않다.
+			. 검색엔진은 표의의미를 파악하기 위해 이런태그를 찾기 때문이다
+		<table>
+			<caption></caption> 테이블이름
+			<thead>
+				<tr>
+					<th></th>	:표의제목
+				<tr>
+			
+			</thead>
+			<tbody>
+				<tr>
+					<td></td>	:표으ㅐ내용
+				<tr>	
+			</tbody>
+			<tfoot>				->thead바로 밑에 기술함이 좋다. 내용이 길어 출력할 때 각 페이지마다 FOOT이 출력된다.
+				<tr>
+					<td></td> : 표의맨하단줄
+				
+				</tr>
+			</tfoot>
+		</table> -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>기본테이블생성</title>
+</head>
+<body>
+	<table border="5">	<!-- 주로 CSS에서 처리함이 바람직하다. -->
+		<caption>테이블이름</caption>
+		<thead>
+			<tr>
+				<th>제목1</th>
+				<th>제목2
+				<th>제목3
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1행1열
+				<td>1행2열
+				<td>1행3열
+			<td>
+			<tr>
+				<td>2행1열
+				<td>2행2열
+				<td>2행3열
+			<td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td>3행1열
+				<td>3행2열
+				<td>3행3열
+			</tr>
+		</tfoot>
+		
+	</table>
+</body>
+</html>

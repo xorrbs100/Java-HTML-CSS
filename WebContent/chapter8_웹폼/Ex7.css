@@ -1,0 +1,6 @@
+@charset"utf-8";
+
+body{background: skyblue}
+h1{color: red ; text-align:center;}
+a{color:blue; text-shadow: 2px 0px black;}
+nav{background: ornage; width:100%;}

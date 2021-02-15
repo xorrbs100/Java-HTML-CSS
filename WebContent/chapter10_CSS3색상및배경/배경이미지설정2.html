@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- 
+	background-image : 이미지붙이기 . url("");
+	background-repeat:	-repeat : 수직/수평 모두 반복(기본)
+						-repeat-x: 수평으로만 반복
+						-repeat-y: 수직으로만 반복
+						-no-repeat: 반복안함
+	background-attachment : 화면에서 고정이냐 스크롤이냐 설정
+		- fixed : 삽입한 그림이 현재의 위치에 고정
+		- scroll:기본값 삽입한 그림이 스크롤에 따라함께 움직임
+	background-position: x위치 y위치
+		- fixed로 설정되어 있을때만 0%~100% 좌우상하 적용됨.
+			. 기본제공값 : top, center, bottom, left, right
+			. 수치로 설정 : 영역에 대한 퍼센트로 지정
+ -->
+
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>배경에이미지설정2</title>
+<style type="text/css">
+	body{
+		background-color:#F3FF48;
+		background-image: url("../img/스폰지밥.png");
+		background-repeat: repeat-x;
+		background-attachment: fixed;	/* 스크롤안됨 */
+		background-position: 0% 100%;	/* fixed일때만 적용 */
+	}
+	p{text-decoration: underline;}
+</style>
+</head>
+<body style="font-size: 30px; font-weight:700">
+	<p align="center">배경 이미지 관련 속성 사용하기</p>
+	
+	
+</body>
+</html>

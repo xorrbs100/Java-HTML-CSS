@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- 
+	변환(transform)
+		. 텍스트나 이미지를 회전,확대등 다양한 기하학적인 모양으로 출력할 수 있다.
+		. 사용하는 회적ㄴ각도 단위는 deg이며, 시계방향으로 회전한다.
+		. 반드시 deg를 써줘야한다.
+	
+	2차원 변환함수
+		변환함수							설명
+		-------------------------------------------------------------------
+		위치이동 translate(x,y)			x축,y축으로 x,y만큼 이동
+			  translateX(n)
+			  translateY(n)
+		-------------------------------------------------------------------
+		확대/축소 scale(w,h)				폭과 높이를 w,h배 만큼 조절 - 0이면 안보임.
+				scaleX(n)
+				scaleY(n)
+		-------------------------------------------------------------------
+		회전 rotate(angle)				angle각도 만큼 시계방향으로 회전
+		-------------------------------------------------------------------
+		기울임 skew(x각,y각)				x축과 y축을 기준으로 각각 x,y각도 만큼 기울임
+			 skewX(각)
+			 skewY(각)
+		-------------------------------------------------------------------
+		
+	*다중반환 : transform에 변환함수들을 나열해서 구현할 수 있다.
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	div[id]{
+		display: inline-block;
+		padding: 5px;
+		color: white;
+		background: olivedrab;
+	}
+	/* 변환 */
+	div#rotate {transform: rotate(20deg);}
+	div#skew {transform: skew(0deg,-20deg);}
+	div#translate {transform: translate(50px,100px);}
+	div#scale {transform: scale(4,2);}
+	
+	
+</style>
+</head>
+<body>
+	<h3>다양한 Transform</h3>
+	아래는 회전(rotate), 기울임(skew), 이동(translate), 확대/축소(scale)가 적용된 사례이다.
+	또한 마우스를 올리면 추가적인 변환이 일어난다.
+	<hr>
+	<div id="rotate">rotate 20deg</div>
+	<div id="skew">skew(0,-20deg)</div>
+	<div id="translate">translate(100px)</div>
+	<div id="scale">scale(3,1)</div>
+</body>
+</html>

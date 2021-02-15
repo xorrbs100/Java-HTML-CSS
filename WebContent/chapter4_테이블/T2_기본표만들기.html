@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- 
+		table 속성			tr속성			td속성
+		-------------------------------------------------
+		background="경로"		''					''				<배경이미지>
+		bgcolor="색상"		''					''				<배경색상>
+		
+		align=""		align="수평정렬"		align="수평정렬"
+						valign="수직정렬"		valign="수직정렬
+						
+		width="숫자"			''					''
+		height=""			''					''
+		
+		cellpadding=""											<셀테두리와 셀내용사이의 간격>
+		cellspacing=""											<각 셀간의 간격지정>
+		border="숫자"	
+											rowspan="숫자"		<세로방향으로 합쳐지는 셀개수지정>
+											colspan="숫자"		<가로방향으로 합쳐지는 셀개수지정>
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>표 만들기</title>
+</head>
+<body>
+	<h1>표 만들기</h1>
+	<hr size="5">
+	<table border="1" bgcolor="#ff00ff" align="center">
+		<thead>
+			<tr>
+				<th>이름
+				<th>HTML점수
+				<th>CSS점수
+			</tr>
+		
+		</thead>
+		<tbody>
+			<tr>
+				<td>임택균
+				<td>100
+				<td>100
+			</tr>
+			<tr>
+				<td>홍길동
+				<td>90
+				<td>90
+			</tr>
+			<tr>
+				<td>강감찬
+				<td>95
+				<td>95
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<th>합계
+				<td>285
+				<td>285
+			</tr>
+		</tfoot>
+	</table>
+</body>
+</html>

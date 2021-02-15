@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	.box {
+		background: gray;
+		color: white;
+	}
+	
+	.floating {
+		background: lightgray;
+		margin: 2px;
+		float: left;
+	}
+	
+	body {height: 400px;}
+	
+	#b1 {height: 20%;}		/* 헤더 */
+	
+	#b2 {height: 65%;}		/* section */
+	#f1 {width: 15%; height: 100%;}
+	#f2 {width: 50%; height: 100%;}
+	#f3 {width: 33%; height: 100%;}
+	
+	#b3 {clear:left; height: 10%;}		/* footer */
+	
+</style>
+</head>
+<body>
+	<div class="box" id="b1">헤더박스</div>
+	<div id="b2">
+		<div class="floating" id="f1">플로팅박스1</div>
+		<div class="floating" id="f2">플로팅박스2</div>
+		<div class="floating" id="f3">플로팅박스3</div>
+	</div>
+	<div class="box" id="b3">풋터 박스</div>
+</body>
+</html>

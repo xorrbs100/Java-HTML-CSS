@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- 
+	고정배치
+		. 고정배치를 시키면 브라우저를 기준으로 위치시키며,
+		. 화면을 키우거나 줄여도 항상 그자리에 위치된다.
+		. 뒤를 따르는 형제박스의 위치에 영향을 준다.
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	div{
+		width : 150px; height :50px; text-align:center;
+		
+	}
+	#b1{background: gray;}
+	#b2{background: green; margin:0px;}
+	#b3{background: red;margin: 0px 10px; position: fixed;/* 배치지정 */ top:30px; right:0px;/* 위치지정 */}
+	#b4{background: orange; margin: 0px 20px;}
+	#b5{background: darkgray;}
+	#container{
+		width: 300px;
+		height: 200px;			
+		position: static;			
+		top:30px; left:30px;		
+		margin: 0px 50px;
+		border: 2px black dashed;
+	}
+</style>
+</head>
+<body>
+	<div id="b1">박스1</div>
+	<div id="container">
+		<div id="b2">박스2</div>
+		<div id="b3">박스3</div>
+		<div id="b4">박스4</div>
+	</div>
+	<div id="b5">박스5</div>
+</body>
+</html>

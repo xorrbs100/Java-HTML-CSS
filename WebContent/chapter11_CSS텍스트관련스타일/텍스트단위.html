@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	.포인트{color:blue;font-size:12pt;}
+	.퍼센트{color:red; font-size:200%;}
+	.픽셀 {font-size: 16px;}
+	.em{font-size:1em;}
+	
+	#기준{background:gray;}
+</style>
+
+</head>
+<body>
+	
+	<p class="포인트">points-1포인트는 0.72인치</p>
+	<p class="퍼센트">%,em	- 지정되거나 상속받은 (또는 상위 엘리먼트)에 대한 백분율 상대크기</p>
+	<p class="픽셀">pixels - 화면 해상도에 대한 상대크기</p>
+	<p class="em">em을 쓰는 이유는 IE6와 같이 zoom기능이 없는 브라우저에서<br>
+		브라우저의 글꼴 크기옵션을 조절했을때 동작하게 하기 위함<br>
+		1em=100% 이다.</p>
+	<p>단위별 비교표</p>
+	<hr align="left" size="1px" width="300px">
+	<table border="1" width="100px" height="50px">
+		<tr align="center">
+			<td>pixels(px)
+			<td>em
+			<td>%
+			<td>points
+		</tr>
+		<tr align="center">
+			<td>12px
+			<td>0.75em
+			<td>75%
+			<td>9pt		
+		</tr>
+		<tr align="center" id="기준">
+			<td>16px
+			<td>1em
+			<td>100%
+			<td>12pt
+		</tr>
+		<tr align="center">
+			<td>20px
+			<td>1.25em
+			<td>125%
+			<td>15pt
+		</tr>
+	</table>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- 
+	절대배치
+		.소속된 컨테이너가(부모컨테이너) 정적배치일때는 컨테이너의 공간은 무시된다.
+		. 그러나 소속된 컨테이너가 상대 또는 절대배치일 경우 소속된 커테이너를 기준으로 배치된다.
+		. 절대배치로 지정하면 뒤따르는형제박스의 위ㅣ치에 영향을 준다
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	div{
+		width : 150px; height :50px; text-align:center;
+		
+	}
+	#b1{background: gray;}
+	#b2{background: green; margin:0px;}
+	#b3{background: red;margin: 0px 10px; position: absolute;/* 절대배치지정 */ top:30px; left:30px;/* 위치지정 */}
+	#b4{background: orange; margin: 0px 20px;}
+	#b5{background: darkgray;}
+	#container{
+		width: 300px;
+		height: 200px;			
+		position: absolute;			
+		top:30px; left:30px;		
+		margin: 0px 50px;
+		border: 2px black dashed;
+	}
+</style>
+</head>
+<body>
+	<div id="b1">박스1</div>
+	<div id="container">
+		<div id="b2">박스2</div>
+		<div id="b3">박스3</div>
+		<div id="b4">박스4</div>
+	</div>
+	<div id="b5">박스5</div>
+</body>
+</html>

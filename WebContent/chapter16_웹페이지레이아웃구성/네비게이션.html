@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	h1{
+		background: #FFE08C;
+		margin: 0px;
+		text-align: center;
+		color: #662500;
+		font-weight: border;
+		font-style: normal;
+		text-decoration: underline;
+		
+	}
+	ul{
+		background: olive; padding: 3px;
+	}
+	li{
+		display: inline; padding: 10px 20px;
+	}
+	li a{padding: 5px 10px; color: white; text-decoration: none;}
+	li a:hover {
+		background-color: darkgray;
+	}
+	li.dropdown{display: inline-block;}
+	.dropdown-content{
+		display: none;
+		position: absolute;
+		background: ghostwhite;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+	}
+	.dropdown-content a{
+		display: block;
+		padding: 12px 16px;
+		text-decoration: none;
+		color: black;
+	}
+	.dropdown-content a:hover {
+		background: lavender;
+	}
+	.dropdown:hover{
+		display: block;
+	}
+</style>
+</head>
+<body>
+	<h1>우리집Cafe</h1>
+	<ul>
+		<li class="dropdown">
+		<a href="#home">Home</a>
+		<div class="dropdow-content">
+			<a href="#">커피이야기</a>
+			<a href="#">건강과커피</a>
+			<a href="#">친구들</a>
+		</div>
+		
+		<li class="dropdown">
+		<a href="#">Espresso</a>
+		<div class="dropdow-content">
+			<a href="#">Single</a>
+			<a href="#">Double</a>
+			<a href="#">Dopio</a>
+			<a href="#">Listreto</a>
+			<a href="#">Longo</a>
+		</div>
+		
+		<li class="dropdown">
+		<a href="#">Cappuciino</a>
+		<div class="dropdow-content">
+			<a href="#">Wet Cappuccino</a>
+			<a href="#">Dry Cappuccino</a>
+		</div>
+		
+		<li class="dropdown">
+		<a href="#">CafeLatte</a>
+		<div class="dropdow-content">
+			<a href="#">Caffe Ore</a>
+			<a href="#">Latte Macchiato</a>
+			<a href="#">Flat White</a>
+			<a href="#">Caffe Mocha</a>
+			<a href="#">Caffe Breve</a>
+		</div>
+		
+	</ul>
+	<div style="height: auto;">
+		<pre>
+			
+								메뉴내용을 출력하는 영역입니다.
+		
+		</pre>
+	</div>
+</body>
+</html>

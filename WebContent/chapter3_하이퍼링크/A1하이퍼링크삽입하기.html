@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- 하이퍼링크를 따라 다른 웹페이지로 이동하는 것을 항해 또는 네비게이션 이라고 한다
+네이게이션만들기라고 하면.. 하이퍼링크를 구현한 것이다
+ * 앵커(anchor): 문서내의 특정 위치로 이동을 하는것을 앵커라고 한다
+ * <a href="URL"||"URL #앵커이름" || "#앵커이름" target="윈도우이름" download></a>
+ 	. href : 이동할 HTML페이지의 URL 혹은 HTML페이지 내의 앵커이름
+ 	. target : 링크에 연결된 HTML페이지가 출력될 윈도우 이름지정
+ 	. download: 링크가 클릭되면 href에 지정된 파일이 다운된다.
+ 	-->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>하이퍼링크삽입하기</title>
+	<base href ="">
+</head>
+<body>
+	<h1>하이퍼링크 href</h1>
+	<hr>
+	<a href="https://www.naver.com/" target="_parent">네이버</a><br>
+	<a href="https://www.youtube.com/" target="_blank">유튜브</a><br>
+	<a href="https://www.daum.net/" target="_self"><img src="../img/튤립.png" alt="다음" width="100" height="100"></a><br>
+	<!-- 다른페이지열기 -->
+	<a href="../chapter2_이미지링크표현/H6_이미지옆텍스트정렬.html" target="_blank">아무데나 다른페이지 열기 - 해보세요</a><br>
+
+</body>
+</html>
+

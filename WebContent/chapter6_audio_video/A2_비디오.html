@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!-- 
+		비디오타입종류		마임타입		설명
+		-------------------------------------------
+		mp4				video/mp4	H.264비디오와 ACC오디오 코덱으로 인코딩된 MPEG4
+		WebM			video/webm	VP8/VP9 비디오와 Vorbis오디오 코덱으로 인코딩된 Webm파일
+		Ogg				video/ogg	Theora 비디오와 Vorbis 오디오 코덱으로 인코딩된 Ogg파일
+		-------------------------------------------------------
+ -->
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<video src="../movie/영상.mp4" controls="controls" type="video/mp4" width="600" height="300">
+	브라우저가 video태그를 지원하지 않습니다 </video>
+	<video src="../movie/영상2.mp4" controls="controls" type="video/mp4" width="600" height="300"></video>
+	<pre>
+		width,height : 재생될 브라우저 공간의 폭과 높이 / 생략되면 영상의 원본크기
+		controls	 : 재생, 재생시간, 중단, 음소거등 제어버튼 출력
+		autoplay	 : 비디오 로밍 즉시 재생
+		loop		 : 반복재생
+		muted		 : 오디오 음소거
+	</pre>
+</body>
+</html>

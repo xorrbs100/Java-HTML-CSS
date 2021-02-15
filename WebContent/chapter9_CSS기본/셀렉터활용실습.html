@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>셀렉터 활용실습</title>
+<style type="text/css">
+	
+	h3,li{color:brown;}
+	div>div>strong{background-color: yellow; }	/* 자식선택자 */
+	ul strong{color: dodgerblue;}	/* 자손선택자 */
+	.warning{color:red;}	/* 클래스선택자 */
+	body.main{background-color: aliceblue;}	/* 클래스선택 */
+	#list{background-color: mistyrose;}	/* ID선택자 */
+	#list span{color:red;}	/* 자손선택자 */
+	h3:first-letter {color:red;}	/* 가상클래스 선택자 */
+	li:active {background-color: yellowgreen; color:gray;}	/* 가상클래스 선택자 */
+	
+	
+</style>
+
+</head>
+<body class="main">
+	<h5>선택자를 학습한 내용을 활용해 봅시다.</h5>
+	<hr>
+	
+	<header>
+		<h3>Web Programming</h3>
+	</header>
+	<section>
+		<div>
+			<div>2학기 <strong>학습내용</strong>입니다</div>
+			<article>
+				<ul id="list">
+					<label><li><a href="#"><span>HTML</span></a></label>
+					<label><li><a href="#"><strong>CSS</strong></a></label>
+					<label><li><a href="#">JAVASCRIPT</a></label>
+				</ul>
+			</article>
+			<div class="warning"> 60점 이하는 F</div>
+		</div>
+	</section>
+	
+</body>
+</html>

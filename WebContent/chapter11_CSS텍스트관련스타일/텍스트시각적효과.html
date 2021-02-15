@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- 
+	웹개발자들이 텍스트에 효과를 주기 위해 포토샵으로 텍스트를 이미지화 해서 사용했었다.
+	하지만, 웹로딩속도를 느리게 하기도 한다. 그래서 CSS에서 시각적 효과를 쉽게 만들수
+	있도록 프로퍼티를 제공한다.
+	
+	.text-shadow : h-shadow	v-shadow  blur-radius color|none
+		- h/v-shadow : 원본 텍스트와 그림자 텍스트 사이의 수평/수직거리
+		- blur-radius : 흐릿한 그림자를 만드는 효과로 흐릿하게 번지는 길이
+		- color: 그림자색
+		- none: 그림자 효과 없음
+ -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<style type="text/css">
+		div{font: normal 24px verdana;}
+		.droptxt{text-shadow: 3px 3px;}
+		.redtxt{text-shadow: 3px 3px red;}
+		.blurtxt{text-shadow: 3px 3px 5px skyBlue;}
+		.glowEfeect{text-shadow: 0px 0px 3px red;}
+		.wordArtEffect{color:yellow; text-shadow: 0px 0px 3px darkBlue;}
+		.threeDEffect{color:white; text-shadow: 20px 2px 4px black;}
+		.multiEffect{color:yellow; text-shadow: 0 0 2px blue, 0 0 5px darkblue;} /* 효과를 중복으로 설정할 수 있다. */
+	</style>
+</head>
+<body>
+	<h3>텍스트 그림자 만들기</h3>
+	<hr>
+	<div class="droptxt">Drop Shadow</div>
+	<div class="redtxt">Color Shadow</div>
+	<div class="blurtxt">Blur Shadow</div>
+	<div class="glowEffect">Glow Effect</div>
+	<div class="wordArtEffect">WordArt Effect</div>
+	<div class="threeDEffect">3D Effect</div>
+	<div class="multiEffect">Multiple Shadow Effect</div>
+</body>
+</html>

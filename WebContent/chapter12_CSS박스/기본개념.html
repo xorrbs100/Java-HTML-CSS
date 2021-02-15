@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- 
+	박스모델이란?
+		.박스란 ? 콘텐츠가 자리하는 영역을 말한다.
+			- div
+			- 목록과 관련된 ul, li
+			- 테이블을 만들기위한 table tr로 이루어진 사각형 형태
+	박스모델과 관련된 스타일
+		.margin : 내용(콘텐츠)의 상우하좌의 여백을 지정한다.
+		.border : 테두리의 두께와 색상등의 스타일응ㄹ 지정한다.
+		.padding:콘텐츠와 테두리 사이의 여백을 지정한다.
+		
+	border-width지정방식 종류
+		border-whidth : 1px 2px 3px 4px :상 , 우 , 하 , 좌
+		border-width : 1px 2px 3px 상, 좌우, 하
+		border-width: 1px 2px : 상하, 좌우
+		border-width:1px			:상하좌우
+ -->
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	body{background-color:  gostwhite;}
+	div.box{
+		background-color:  yellow;
+		border-style: solid;
+		border-color: peru;
+		border-width: 30px;
+		margin:40px;
+		padding:20px;
+		text-align:center;
+	}
+	span{background-color: #1DDB16;}
+</style>
+</head>
+<body>
+	<div class="box">
+		<span>콘텐츠</span>
+	</div>
+</body>
+</html>

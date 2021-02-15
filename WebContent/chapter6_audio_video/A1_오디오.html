@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- 
+	미디어 삽입
+		.HTML5에서는 기존 플러그인(ActiveX등)을 설치하지 않고도 미디어 플레이가 재생되도록
+		  태그를 표준화하였다.
+		.표준화된 태그 : <audio> <video>
+		.플래시 애니메이션과 같이 표준화되지 않은 미디어 재생시는 <embed> <object>태글를 사용한다.
+	.오디오 타입(Type)
+		(종류)	(마임(MIME)타입)			설명
+		------------------------------------------------------------
+		Mp3		audio/mpeg				mp3로 인코딩된 오디오파일
+		Wav		audio/wav				wav로 인코딩된 오디오파일
+		Ogg		audio/ogg				Vorbis오디오 코덱으로 인코딩된 Ogg파일
+		-------------------------------------------------------------
+
+ -->
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<audio src="../sound/Kalimba.mp3" controls="controls" autoplay="autoplay" loop="loop" type="audio/mpeg">
+	브라우저가 audio태그를 지원하지 않습니다.
+	</audio><br>
+		
+	<audio src="../sound/Kalimba.ogg" controls="controls"></audio><br>
+	<hr>
+		controls : 음악 재생 도구를 출력할지 지정<br>
+		autoplay : 음악 자동재생여부 설정 - 크롬/모바일 브라우저에서는 보안상 지원하지 않음<br>
+		loop	 : 음악을 반복할지 지정<br>
+		preload	 : 음악을 재생하기 전에 모두 불러올지 지정<br>
+		
+	
+</body>
+</html>

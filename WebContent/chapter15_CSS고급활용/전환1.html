@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- 
+	전환(transition)
+		. HTML태그에 적용된 CSS3속성값이 변할 때
+		. 값의 변화를 서서히 진행시켜 애니메이션 효과를 내는것.
+		. 1회만 이루어진다.
+		. 전환을 유발시키는 CSS속성을 전환프로퍼티라고한다.
+		. 태그의 색, 모양, 위치등을 서서히 변하게 하는 효과가 있다.
+		
+	구현방법
+		transition	: 전환프로퍼티, 전환시간
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	span {
+		transition : font-style, 5s;
+	}
+	span:hover {
+		font-size: 500%;
+		font-weight: bolder;
+		color: red;
+	}
+</style>
+</head>
+<body>
+	<h3>font-size에 대한 전환</h3>
+	<hr>
+	<p><span>꽝</span>글자에 마우스를 올려보세요.</p>
+</body>
+</html>

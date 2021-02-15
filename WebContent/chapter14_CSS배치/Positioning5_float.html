@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- 
+	플로팅박스
+		. 마치 공중에 떠 있는 것처럼 배치하는 것.
+		. 뒤따르는 박스들은 공중에 떠 있는 플로팅 박스의 아래부분으로도 배치되어 웹 브라우저 화면에는
+        	 마치 이것들을 위에서 본 것처럼 중복해서 나타난다.
+		
+	float속성과 주요값
+		속성			속성값		의  미
+	-----------------------------------------
+		float		left		플로팅박스는 화면 왼쪽에 배치됨
+					right		플로팅 박스는 화면 오른쪽에 배치됨
+					none		(기본값) 플로팅 박스로 지정하지 않음
+	---------------------------------------------
+		clear		left		left로 지정된 앞의 플로팅 박스들과 중복되지 않게 배치
+					right		right로 지정된 앞의 플로팅박스들과 중복되지 않게배치
+					both		앞의 모든플로팅 박스들과 중복되지 않게배치
+
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	#b1{background: gray}
+	#box{
+		background: skyblue;
+		border: 2px solid black;
+		width:100px; height: 60px; margin:10px;
+		float: lefft;
+	}
+	#b2{
+		background: orange;
+		border: 1px dashed black;
+	}
+</style>
+</head>
+<body>
+	<div id="b1">Box앞에 있는 박스</div>
+	<div id="b2">기준BOX</div>
+	<div id="b3">Box뒤에 있는 박스</div>
+</body>
+</html>

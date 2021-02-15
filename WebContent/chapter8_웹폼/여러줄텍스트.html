@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--  
+	textarea태그
+		row="수치" : 텍스트 영역의 높이 즉,글자를 몇줄까지 적을 것인지를 지정
+		cols="수치"
+		name=""
+		wrap="값" 자동줄바꿈 설정	-off:안됨 , virtual:자동줄바꿈- 전송시 한줄로 취급
+								-physical:자동줄바꿈 - 전송시 여러줄로 취급
+		
+-->
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>여러줄 텍스트</title>
+</head>
+<body>
+	<form action="">
+		텍스트영역1(rows/cols 미지정, 자동 줄바꿈 미수행)<br>
+		<textarea rows="" cols="" wrap="hard" name="text1">
+		
+		</textarea>
+		<hr>
+		텍스트영역2<br>
+		<textarea name="text2"rows="7" cols="6" wrap="soft">원하는 내용을 입력해 주세요</textarea><br>
+		<hr>
+	</form>
+
+</body>
+</html>

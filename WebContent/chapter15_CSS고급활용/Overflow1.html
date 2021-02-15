@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- 
+	Overflow
+		- 콘텐츠가 width와 height를 넘어가는 경우에 콘텐츠를 잘라서 안보이게 할것인지 보이게 할것인지등을 지정하는 속성이다.
+		- 속성
+			. visible	: 콘텐츠가 잘리지 않고 태그 영역을 넘어서라도 출력해준다(디폴트)
+			. hidden	: 넘어가는 것은 보이지 않음 - 스크롤바가 없다.
+			. scroll	: 스크롤바를 항상 부착해서 콘텐츠를 출력
+			. auto		: 콘텐츠가 박스의 높이보다 넘치면 스크롤바 생성
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	p {width: 15em;
+		height: 3em;
+		border: 1px solid red;
+		background: yellow;}
+	
+	#hidden {overflow: hidden;}
+	
+	#visible {overflow: visible;}
+	
+	#scroll {overflow: scroll;}
+	
+	#auto {overflow: auto;}
+		
+</style>
+</head>
+<body>
+	<h3>Overflow속성</h3>
+	<hr>
+	<p id="hidden">overflow에 hidden값을 적용하면 박수를 넘어가는 내용이 잘려보이지 않습니다.</p><br>
+	<p id="visible">overflow에 visible값을 적용하면 콘텐츠가 박스를 넘어가도 출력이 됩니다.</p><br>
+	<p id="scroll">overflow에 scroll값을 적용하면 박수에 스크롤바를 붙여 출력합니다.</p><br>
+	<p id="auto">CSS를 잘 활용하면 좋습니다. overflow에 auto를 적용해놓으면 필요할때 자동으로 스크롤바가 생성됩니다.</p><br>
+	
+</body>
+</html>

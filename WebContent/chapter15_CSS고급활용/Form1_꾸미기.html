@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- 
+	선택자
+		input [type="text"] { }
+		
+	클래스셀렉터
+		. :hover
+		. :focus	(입력하기위해 마우스를 클릭하면 포커스를 받는다. 포커스는 독점권을 갖는다)
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	input [type="text"] {
+		color: red;
+	}
+	
+	input:hover {
+		background: aliceblue;
+	}
+	
+	input[type=text]:focus, input[type=email]:focus {
+		font-size: 120%;
+	}
+	
+	label {
+		display: block;		/* 새로운라인으로 시작해라 한칸씩밑으로 */
+		padding: 5px;
+	}
+	
+	span {
+		display: inline-block;
+		width: 90px;
+		text-align: right;
+		padding: 10px;
+	}
+</style>
+</head>
+<body>
+	<h3>Contact us</h3>
+	<hr>
+	
+	<form action="">
+	
+		<label>
+			<span>Name</span> <input type="text" placeholder="홍길동">
+		</label>
+		
+		<label>
+			<span>Email</span> <input type="email" placeholder="홍길동@naver.com">
+		</label>
+		
+		<label>
+			<span>Comment</span> <textarea rows="2" cols="10" placeholder="메세지를 남겨주세요"></textarea>
+		</label>
+		
+		<label>
+			<span></span> <input type="submit" value="전송">
+		</label>
+		
+	</form>
+</body>
+</html>

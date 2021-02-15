@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- 
+	box-shadow: h-shadow v-shadow blur-radius   color|none|inset
+	
+	.spread-radius : 그림자크기
+	.inset:음각 바긋로 보이게 박스 상단 안쪽에 그림자 형성
+ -->
+
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	div[class]{width: 150px; height:70px;padding: 10px; border: 10px solid lightgray; background-image: url("../img/뚱이.png");
+			background-size: 150px 100px; background-repeat: no-repeat;
+	}
+	.redBox{box-shadow:10px 10px 5px red;}
+	.blurBox{box-shadow: 10px 10px 5px skyBlue;}
+	.multiEffect{
+		box-shadow :2px 2px 2px black,
+					0px  0px 25px blue
+					0	0	5px	darkblue;
+	}
+	
+</style>
+</head>
+<body>
+	<h3>박스그림자만들기</h3>
+	<hr>
+	<div class="redBox">뚱이와 함께</div><br>
+	<div class="blurBox">뚱이와 함께</div><br><br><br>
+	<div class="multiEffect">뚱이와 함께</div><br>
+</body>
+</html>

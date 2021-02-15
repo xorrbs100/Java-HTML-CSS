@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- 
+	가상클래스 : CSS에서 제공되고 있는 약40여종
+	
+	유형				셀렉터					설명
+	-----------------------------------------------------
+	마우스			:hover			마우스가 올라갈 때 스타일 적용
+	마우스			:active			마우스를 누르고 있는 상황에서 스타일적용
+	폼				:focus			폼 요소가 키보드나 마우스 클릭으로 포커스를 받을때 스타일
+	링크				:link			방문하지 않은 링크에 스타일 적용
+	링크				:visited		방문한 링크에 스타일 적용
+	블록				:first-letter	<p><div>등과 같은 블록형 태그의 첫글자에 스타일 적용
+									<span>과 같은 인라인 태그에는 적용안됨
+	블록				:first-line		블록의 첫줄에 스타일적용
+	구조				:first-child	첫번째 자식
+	구조				:last-child		마지막 자식
+	구조				:before			요소의 맨 앞에 배치하는 마크업에 없는 가상요소
+	구조				:after			요소의 맨 뒤에 배치하는 마크업에 없는 가상요소
+	구조				:nth-chile(even)짝수번째 모든 자식태그에 스타일 적용
+	구조				:nth-chile(1)	첫번째 자식 태그에 스타일 적용
+	*visited 셀렉터는 색과 관련된 속성만 다룰수 있다.
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	a {color: #000000;}
+	a:hover {color: #ff0000;} /* 마우스가 닿으면 빨간색으로 지정 */
+	a#t:visited{color:orange;}	/* 해당페이지에 갔다가 돌아온 경우에 오렌지로 */
+	
+	
+</style>
+
+</head>
+<body>
+
+	<ul>
+		<li><a id="t" href="https://www.naver.com/" target="_blank">Company</a>
+		<li><a href="#">Product</a>
+		<li><a href="#">Service</a>
+		
+	</ul>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>이미지 라디오 버튼</title>
+</head>
+<body>
+	<p>label로 문자열과 이미지를 함께 캡션으로 만들 수 있다. 차이점을 비교해보자</p>
+	<form action="">
+		<label>
+			<input type="radio" name="china" value="1">
+			짜장면<img src="../img/짜장면.png">
+		</label>
+		<label>
+			<input type="radio" name = "china" value="2">
+			짬뽕<img src="../img/짬뽕.png">
+		</label>
+		<!-- label처리 하지않고 설정 -->
+		<input type="radio" name="china" value="3">
+			탕수육<img src="../img/탕수육.png">
+		<p> value속성은 name과 함께 웹서버로 전송되는 폼요소이다.</p>		
+	</form>
+	
+	
+</body>
+</html>

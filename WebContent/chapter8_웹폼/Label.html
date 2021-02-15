@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>레이블태그활용</title>
+</head>
+<body>
+
+	<h2>label활용</h2>
+	<p>label태그를 활용하여 묶어서 캡션처리하면 문서를 훨씬 명료하게 표현할 수 있다</p>
+	<hr>
+	<form action="">
+		<label>
+			사용자ID : <input type="text" size="15" value="">
+			
+		</label><br>
+		<p>또, 아래와 같이 for="" 속성을 이용해서 캡션을 연결할 수 있다.</p>
+		
+		<label for="LogId">			<!-- 라벨로 캡션을 만들어놓는다 -->
+			사용자ID:
+			
+		</label>
+		<input type="text" id = "LogID"><!-- input에서id로부른다 -->
+	</form>
+	<hr size="2">
+	<h2 align="center">&lt;label&gt;태그를 이용한 로그인폼 활용 예</h2>
+	<hr width="500" align="center">
+	<br><br>
+	<form name="fo" action="" method="get">
+		<label>사용자ID : <input type="text" size="15" value=""></label><br>
+		<label for="pass">
+			비밀번호:
+		</label>
+		<input type="password" id ="pass" value="">
+		<input type="submit" value="확인">
+	</form>
+	
+</body>
+</html>

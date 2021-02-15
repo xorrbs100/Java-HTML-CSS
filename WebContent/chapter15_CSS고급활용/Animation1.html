@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- 
+	자바스크립트를 사용하지않고 CSS3만으로 HTML태그의 모양을 동적변화 시킬 수 있다.
+	. 가능한 기능
+		애니메이션 / 전환 / 변환
+		
+	1. 애니메이션 구현방법
+		1) 시간별 애니메이션 장면을 지정
+			@keyframes 이름{
+				시간비율 {스타일:스타일;}
+				...
+				시간비율 {스타일:스타일;}
+			}
+		
+		2) 애니메이션 스타일 시트작성
+			animation-name : 호출이름;
+			animation-duration : 시간s;
+			animation-iteration-count : 반복횟수;
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	@keyframes textColorAnimation{
+		0% {color:blue;}
+		50% {color:green;}
+		100% {color:red;}
+	}
+	span {
+		animation-name:textColorAnimation;
+		animation-duration: 5s;
+		animation-iteration-count: infinite;
+		
+		background: lightgray;
+		font-size: 30px;
+	}
+</style>
+</head>
+<body>
+	<p><span>변하고있습니까?</span> 텍스트를 5초에 blue,green,red로 무한반복</p>
+</body>
+</html>

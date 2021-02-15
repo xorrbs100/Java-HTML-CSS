@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- 
+	text-transform						font-vaiant
+	.none:일반							.none:일반
+	.capitalize:첫글자 대문자				.small-caps:작은 글자의 대문자, 한글에서 의미없음
+	.Uppercase : 모두대문자				.inherit:부모요소의 속성값을 상속받음
+	.lowercase : 모두소문자				.initial:기본값
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	body p.text1{font-weight: bolder; text-transform: capitalize;}
+	.text2{font-weight: bolder; text-transform: uppercase;}
+	.text3{font-weight: bolder; text-transform: lowercase;}
+	.text4{font-variant:inherit;}		/* 부모p태그의 small-caps를 상속받아 적용된다. */
+</style>
+</head>
+<body>
+	<p class="text1">Life is venture or nothing</p>
+	<p class="text2">a rolling stone gathers no moss</p>
+	<p class="text3">PUT OFF ONE DAY AND TEN DAYS WILL PASS</p>
+	<p style="font-variant: small-caps;"><font class="text4">a rolling stone gathers no moss</font></p>
+</body>
+</html>

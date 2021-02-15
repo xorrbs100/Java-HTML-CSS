@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- 
+	배경관련속성
+	;HTML의 font태그의 color 속성처럼 글자색을 지정할때는 color속성을 사용하고
+	배경색을 지정할 때는 background-color를 사용한다.
+	.background : 배경의 속성들을 일괄지정
+	.background-color: 배경색지정
+	.background-image: 배경 이미지 경로/파일지정
+	.background-repeat: 배경이미지 반복여부 지정
+	.background-attachment: 배경이미지의 스크롤 여부지정
+	.background-position : 배경 이미지의 시작위치 지정
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	.color1{color:#800080; background-color: yellow;}
+	.color2{color: #ff0000; background-color: orange;}
+	.color3{color: #ffffff;background-color: purple;}
+	p span{color:white;background-color: red;}
+
+</style>
+</head>
+<body class="color1">
+	<p style="font-size: 15pt; font-weight: 700; background-color: green;">글자의 색상 및 배경색 지정하기</p>
+	<p class="color2">글자의 색상 및 배경색 지정</p>
+	<p class="color3"><span>글자의 색상 및 배경색 지정</span></p>
+</body>
+</html>

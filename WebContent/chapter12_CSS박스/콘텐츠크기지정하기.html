@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- 
+	범위지정하기
+		. 내용이 표시되는 영역에 대해서 폭과 높이를 지정하기 위해 width와 height를 이용
+		. 만약, 두 속성중에 하나만 지정되면 나머지는 자동으로 크기가 결정된다.
+		
+		. HTML의 width와 height : 표 이미지 태그에서 속성은 해당 태그에만 적용된다.
+		. CSS의 width와 height : 표 , 이미지 ,각종버튼, 문단등 다양한 태그에서 적용된다.
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	.range1{width: 40%; background-color: purple;}
+	.range2{height: 50pt; background-color: orange;}
+	.range3{width:100pt; height: 30pt; background-color: lightblue; }
+	.range4{		/* height만 설정 */
+		height: 10pt; background-color: blue; position: left;
+	}
+	
+</style>
+</head>
+<body>
+	<p class="range1">범위 지정하기</p>	<!-- 텍스트 -->
+	<div class="range2">범위 지정하기</div><br>	<!-- 문단 -->
+	<input class="range3" type="button" value="버튼">		<!-- 입력버튼 -->
+	<hr class="range4">	<!--구분선등 다양한 태그에 width 와 height 이 사용된다  -->
+</body>
+</html>
