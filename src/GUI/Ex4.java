@@ -1,10 +1,4 @@
- 
-
 package GUI;
-
- 
-
- 
 
 import java.awt.*;
 
@@ -12,11 +6,8 @@ import javax.swing.*;
 
 import javax.swing.event.*;
 
- 
 
 public class Ex4 extends JFrame{
-
- 
 
 	JPanel jp = new JPanel();
 
