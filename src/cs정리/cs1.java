@@ -42,7 +42,7 @@ DIP(Dependency Inversion Principle, 의존 역전 법칙): 클라이언트는 �
 [ RESTful API ]
 REST(REpresentational State Transfer)ful API는 HTTP 통신에서 어떤 차원에 대한 CRUD 요청을 Resource와 Method로 표현하여 특정한 형태로 전달하는 방식입니다. RESTful API는 아래와 같은 것들로 구성됩니다.
 
-  
+ 
 
 Resource(자원, URI)
 Method(요청 방식, GET or POST 등)
